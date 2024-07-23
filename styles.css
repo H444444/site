@@ -1,0 +1,560 @@
+body{
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    border-bottom-style: solid;
+    border-bottom-color:rgba(171, 171, 171, 0.163); 
+    position: sticky;
+    right: 100%;
+    top:0;
+    z-index: 1000;
+    height: 95px;
+    width: 100%;
+    background-color: rgb(255 255 255);
+    border-width: thin;
+    color: gray;
+    
+    
+    .picture{
+        margin-top: 20px;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+    
+
+    nav{
+        
+        ul{
+            list-style-type: none;
+            li{
+                display: flex;
+                font-size: 15px;
+                word-spacing: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                cursor: pointer;
+                .abu{
+                    margin-top: 10px;
+                    color: rgb(0,204,177);
+                }
+                .et{
+                    margin-top: 10px;
+                    color:rgb(171,171,171);
+                }
+                .et:hover{
+                    color: rgb(0,179,181);
+                }
+                .est{
+                    margin-top: -10px;
+                    color: rgb(171,171,171);
+                }
+                .est:hover{
+                    color:rgb(0,204,177);
+                    
+                }
+            }      
+        }
+          
+    } 
+   .menu{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    display: flex;
+   }
+   .menu-item{
+    position: relative;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+   }
+   .menu-item:hover .submenu{
+    display: block;
+   }
+   .submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.348);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+   }
+   .submenu li{
+    padding: 10px;
+    color:rgb(171,171,171);
+    display: block;
+
+   }
+   .submenu li:hover{
+    background-color: rgb(0,204,177);
+   }
+  
+}
+.ff{
+    list-style-type: none;
+}
+label{
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding-right: 10px;
+}
+select{
+    font-size: 0.9rem;
+    padding :2px 5px;
+}
+
+.img{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    
+
+}
+.p{
+    font-family:century gothic; 
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+    font-size:30px ;
+    color: rgb(0,179,181);
+    
+}
+.element1{
+    display: flex;
+    justify-content: center;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 40px;
+    color: rgb(116,116,116);
+    .enfant1{
+       margin-left: 15px;
+       width: 500px;
+    } 
+    .enfant2{
+        margin-right: 15px;
+        width: 500px;
+    }
+}
+section{
+    .childs{
+        display: flex;
+        justify-content:center;
+        column-gap: 20px;
+        width: auto;
+        margin: 50px;
+        
+        .patients{
+            align-content: center;
+            display: block;
+            width: 275px;
+            height: 350px;
+            padding: 23px;
+            color: white;
+            font-family: century gothic;
+            font-size: 20px;
+            background-color: rgb(0,204,177);
+            border-radius: 10px;
+
+            h2{
+                font-weight: 100;
+                font-size: 30px;
+            }
+            a{
+                color: white;
+                font-size: 17px;
+            }
+            
+    
+        }
+        .patients:hover{
+            background-color: rgba(0, 204, 177, 0.921)
+
+        }
+        .patients::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: opacity 0.2s ease-out;
+            background-color: rgba(0, 204, 177, 0.921);
+            opacity: 0;
+        }
+        .doctors{
+            align-content: center;
+            display: block;
+            width: 275px;
+            height: 350px;
+            background-color: rgb(61,131,223);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            font-family: century gothic;
+            font-size: 20px;
+            h2{
+                font-weight: 100 ;
+                font-size: 30px;
+            }
+            a{
+                color: white;
+                font-size: 17px;
+            }
+        }
+        .doctors:hover{
+            background-color: rgba(61, 131, 223, 0.904);
+        }
+        .doctors::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: opacity 0.2s ease-out;
+            background-color: rgba(61, 131, 223, 0.904);
+            opacity: 0;
+        }
+
+        .clinics{
+            display: block;
+            align-content: center;
+            background-color: rgb(27,39,52);
+            width: 275px;
+            height: 350px;
+            padding: 20px;
+            color: white;
+            border-radius: 15px;
+            font-family: century gothic;
+            font-size: 20px;
+
+            .link{
+                a{
+                    color: white;
+                    font-size: 17px;
+                }
+            }
+            h2{
+                font-weight: 100 ;
+                font-size: 30px;
+            }
+    
+        }
+        .clinics:hover{
+            background-color: rgba(27, 39, 52, 0.91);
+        }
+        .clinics::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            width:100% ;
+            height: 100%;
+            z-index: -1;
+            transition: opacity 0.2s ease-out;
+            background-color: rgba(27, 39, 52, 0.91);
+            opacity: 0;
+        }
+    }
+}
+.mer{
+    display: flex;
+    margin: 25px;
+
+    .fille1{
+        display: inline;
+        font-family: century gothic;
+        color: rgb(0,179,181);
+        .petite-fille1{
+            font-weight: lighter;
+            margin-left: 250px;
+            font-size: 0.8cm;
+        }
+    }
+    .fille2{
+        .petite-fille2{
+            list-style-type: none;
+            display:grid;
+            grid-template-columns: 4cm 4cm 4cm 4cm ;
+            grid-template-rows: 1.3cm 1.3cm 1.3cm 1.3cm ;
+            cursor: pointer;
+            .image.img{
+                background-color: rgb(171,171,171);
+            }
+            
+        }
+    }
+}
+.global{
+    background-color: rgb(224,249,247);
+    display: block;
+    height:690px;
+    width: auto;
+    padding: 15px;
+    display: flex;
+    .des{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(116,116,116);
+        text-align: center;
+
+    }
+    .droite{
+        .titre{
+            font-family: century gothic;
+            font-weight: lighter;
+            color: rgb(0,179,181);
+            font-size: 35px;
+            margin-left: 150px;
+            margin-top: 150px;
+        
+        }
+        .des{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(116,116,116);
+            margin-left: 150px;
+            text-align: justify;
+
+        }
+    }
+    .image{
+        transform: translate(-130%,275%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 82.5%, 0 82.5%);
+        
+    }
+    .gauche{
+        .pere1{
+            margin-left: 200px;
+            .fils1{
+                .tit{
+                    /*logo du drapeau*/
+                    font-family: century gothic;
+                    color: rgb(0,179,181);
+                    font-weight: lighter;
+                    font-size: 26px ;
+                    text-align: center;
+                }
+                .imag{
+                    transform: translate(100px,15px);
+                }
+
+                display: block;
+                padding: 15px;
+                height: 250px;
+                width: 250px;
+                background-color: white;
+                border-radius: 8px;
+                margin-bottom:  20px; ;
+                transform: translate(0,60px);
+
+            }
+            .fils2{
+                .imag{
+                    transform: translate(100px,15px);
+                }
+
+                .tit{
+                    font-family: century gothic;
+                    color: rgb(0,179,181);
+                    font-weight: lighter;
+                    font-size: 26px;
+                    text-align: center;
+                }
+                display: block;
+                padding: 15px;
+                height: 250px;
+                width: 250px;
+                background-color: white;
+                border-radius: 9px;
+                margin-bottom: 50px;
+                transform: translate(0,60px);
+                
+            }
+        }
+        
+        .pere2{
+            margin-left: 500px;
+           
+            
+            .fils3{
+                display: block;
+                background-color: white;
+                padding: 15px;
+                height: 250px;
+                width: 250px;
+                border-radius: 9px;
+                align-content: center;
+                margin-bottom: 20px;
+                transform: translate(0px,-600px);
+                .imag{
+                    transform: translate(100px,15px);
+                }
+                .tit{
+                    /*insertion du logo*/
+                    font-family: century gothic;
+                    color: rgb(0,179,181);
+                    font-weight: lighter;
+                    font-size: 26px;
+                    text-align: center;
+                }
+
+
+            }
+            .fils4{
+                display: block;
+                background-color: white;
+                padding: 15px;
+                height: 250px;
+                width: 250px;
+                border-radius: 9px;
+                align-content: center;
+                transform: translate(0px,-600px);
+                .imag{
+                    transform: translate(100px,15px);
+                }
+
+                .tit{
+                    /*insertion du logo*/
+                    font-family: century gothic;
+                    color: rgb(0,179,181);
+                    font-weight: lighter;
+                    font-size: 26px;
+                    text-align: center;
+
+                }
+            }
+        }
+        
+
+    }
+}
+.foot{
+    text-align: center;
+    .titl{
+        font-family: century gothic;
+        color: rgb(0,179,181);
+        font-weight: lighter;
+        font-size: 30px;
+
+    }
+    .des{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(116,116,116);
+        line-height: 20px;
+    }
+}
+.grid{
+    display: grid;
+    grid-template-columns:repeat(3,320px);
+    margin-left: 250px;
+    gap: 15px;
+    justify-items: center;
+
+    .city{
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px; 
+        border-radius: 10px;
+        .tit{
+            font-weight: lighter;
+            color: rgb(116,116,116);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            transform: translate(-95px,28px);
+        }
+
+        .img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+       
+        .boutton{
+          display: block;
+          border: none;
+          transform: translate(150px,-20px);
+          background-color:rgb(61,131,223) ;
+          border-radius: 7px;
+          color: white;
+          font-weight: bold;
+          padding: 10px 20px;
+          cursor: pointer;
+            
+            
+        }
+        .boutton:hover{
+            background-color: rgb(42, 117, 215)
+        }
+    }
+}
+.city:hover{
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.042);
+}
+.foot{
+    .fin{
+        font-family: century gothic;
+        font-weight: 50;
+        font-size: 33px;
+        
+    }
+    .boutton{
+        display: block;
+        border: none;
+        transform: translate(640px,-15px);
+        background-color:rgb(61,131,223) ;
+        border-radius: 7px;        
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        cursor: pointer;
+          
+          
+    
+      .boutton:hover{
+          background-color: rgb(42, 117, 215)
+        }
+    }    
+
+}
+footer{
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-top-style: solid;
+    color: rgba(171, 171, 171, 0.119);
+    padding: 25px;
+    .pied{
+        display: flex;
+        margin-left: 400px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(171,171,171);
+      font-size: 12px;
+      .pied1{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(61,131,223);
+      
+      }
+      
+
+    }
+
+    .b{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(171,171,171);
+        font-size: 12px;
+        margin-left: 680px;
+    }
+}
